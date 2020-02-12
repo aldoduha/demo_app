@@ -18,7 +18,7 @@ abstract class CommonConstants {
   /// list API
   static const String MAIN_DOMAIN_BUCKET_MOVIE = 'www.omdbapi.com';
   static const String MAIN_DOMAIN_CACHE_MOVIE = 'https://demo-video-ws-chfmsoli4q-ew.a.run.app';
-  static const String API_SEARCH_MOVIE = 'http://www.omdbapi.com/?apikey=b4fd0ced&s=Falling';
+  static const String API_SEARCH_MOVIE = 'http://www.omdbapi.com/?apikey=b4fd0ced&s=Love';
   static const String API_SEARCH_BY_TITLE = 'http://www.omdbapi.com/?apikey=b4fd0ced&t=Avenger';
   static const String API_ADD_FAVORITE_MOVIE = '';
 

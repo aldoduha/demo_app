@@ -20,7 +20,10 @@ class Router {
     RoutePath.dashboardPage: _getMaterialPageRouteWithBloc(
         page: HomePageOptions.dashboard,
         blocProviderList: _dashboardBlocProviderList()),
-    RoutePath.searchPage: _getMaterialPageRouteWithBloc(page: HomePageOptions.search),
+    RoutePath.searchPage: _getMaterialPageRouteWithBloc(
+        page: HomePageOptions.search,
+        blocProviderList: _dashboardBlocProviderList()
+    ),
     RoutePath.favoritePage: _getMaterialPageRouteWithBloc(page: HomePageOptions.favorite),
     RoutePath.settingPage: _getMaterialPageRouteWithBloc(page: HomePageOptions.settings),
   };
