@@ -1,8 +1,8 @@
 import 'package:demo_app/common/models/data_context.dart';
 import 'package:demo_app/common/models/response_handler.dart';
-import 'package:demo_app/data/models/omdb_movie.dart';
-import 'package:demo_app/data/models/omdb_movie_search_content.dart';
-import 'package:demo_app/data/models/omdb_response_error.dart';
+import 'package:demo_app/domain/models/omdb_movie.dart';
+import 'package:demo_app/domain/models/omdb_movie_search_content.dart';
+import 'package:demo_app/domain/models/omdb_response_error.dart';
 import 'package:demo_app/util/common_constants.dart';
 import 'package:flutter/material.dart';
 

@@ -4,14 +4,16 @@ import 'dart:io';
 import 'package:demo_app/common/models/response_handler.dart';
 import 'package:demo_app/common/network/base_network_client.dart';
 import 'package:demo_app/common/models/data_context.dart';
-import 'package:flutter/material.dart';
+import 'package:meta/meta.dart';
 import 'package:http/http.dart' as http;
 import 'package:injectable/injectable.dart';
 
 @lazySingleton
 @injectable
-class NetworkClientImpl implements BaseNetworkClient<DataContext> {
+class NetworkClientImpl implements BaseNetworkClient {
   final http.Client _client;
+
+  NetworkClientImpl(this._client);
 
   NetworkClientImpl.init(this._client);
 

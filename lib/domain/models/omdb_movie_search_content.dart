@@ -1,5 +1,6 @@
 import 'package:demo_app/common/models/data_context.dart';
-import 'package:demo_app/data/models/omdb_movie_short_info.dart';
+
+import 'omdb_movie_short_info.dart';
 
 class OMDBMovieSearchContent extends DataContext{
   static const String FIELD_SEARCH = 'Search';

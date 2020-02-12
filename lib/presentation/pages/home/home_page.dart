@@ -1,5 +1,8 @@
+import 'package:demo_app/presentation/pages/dashboard/dashboard_page.dart';
+import 'package:demo_app/presentation/pages/favorite/favorite_page.dart';
+import 'package:demo_app/presentation/pages/search/search_page.dart';
+import 'package:demo_app/presentation/pages/settings/setting_page.dart';
 import 'package:flutter/material.dart';
-import 'package:demo_app/presentation/dashboard/dashboard_page.dart';
 
 enum HomePageOptions {
   dashboard,
@@ -7,7 +10,6 @@ enum HomePageOptions {
   favorite,
   settings,
 }
-
 
 class HomePage extends StatefulWidget {
 
@@ -43,9 +45,9 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> _pages = [
     DashboardPage(),
-    DashboardPage(),
-    DashboardPage(),
-    DashboardPage(),
+    SearchPage(),
+    FavoritePage(),
+    SettingPage(),
   ];
 
   void _onItemSelected(int index) {

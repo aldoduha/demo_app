@@ -1,5 +1,5 @@
 import 'package:demo_app/common/models/data_context.dart';
-import 'package:demo_app/data/models/omdb_movie_rating.dart';
+import 'package:demo_app/domain/models/omdb_movie_rating.dart';
 
 class OMDBMovie extends DataContext {
   static const String FIELD_TITLE = 'Title';

@@ -1,24 +1,22 @@
-import 'package:demo_app/data/datasource/omdb_movie_remote_datasource.dart';
-import 'package:demo_app/data/models/omdb_movie_short_info.dart';
+
+import 'package:demo_app/common/config/injector.dart';
+import 'package:demo_app/presentation/pages/splash/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:demo_app/util/router.dart';
-import 'package:demo_app/presentation/splash/splash_page.dart';
 
-void main() => runApp(DemoApp());
+void main() async {
+
+  WidgetsFlutterBinding.ensureInitialized();
+  await setupInjections();
+
+  runApp(DemoApp());
+}
+
 
 class DemoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    /// TODO : remove this code
-    OMDBMovieRemoteDatasourceImpl.create()
-        .searchMovie(contentSearch: 'Falling')
-        .then((value) {
-      value.forEach((item) {
-        print(item.imdbID);
-      });
-    });
 
     return MaterialApp(
       title: 'Home Navigation',
